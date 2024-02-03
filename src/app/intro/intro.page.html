@@ -16,9 +16,7 @@
     <swiper-slide *ngFor="let slide of slides; let i = index">
       <h1 class="red-title">{{slide.title}}</h1>
       <img src={{slide.image}}/>
-      <p class={{slide.class}} [innerHTML]="slide.description"></p>
-      <ion-button *ngIf="i == 3">Hola mundo</ion-button>
-  
+      <p class={{slide.class}} [innerHTML]="slide.description"></p>  
     </swiper-slide>
     
     

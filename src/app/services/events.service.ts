@@ -32,7 +32,4 @@ export class EventsService {
       );
   }
 
-  //Obtener categorias " get hacia /categories "
-  //Obtener 1 categoria " get hacia /categories/:id"
-  
 }
