@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <swiper-container
+    [loop]="true"
+  [pagination]="true"
+  [slidesPerView]="1"
+  [effect]="'coverflow'"
+  [coverflowEffect]="{
+    'rotate': 40,
+    'slideShadows': true
+  }"
+    >
+        <swiper-slide *ngFor="let slide of event_list">
+            <img src="{{slide.image}}">
+        </swiper-slide>
+    </swiper-container>
+
+</ion-content>
+
+<!-- 2.Crear un boton en intro para omitir y regresar al home -->
